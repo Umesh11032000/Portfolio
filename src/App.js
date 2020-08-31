@@ -39,7 +39,7 @@ class App extends React.Component {
       <Router>
         <Container className="p-0" fluid={true}>
           
-          <Navbar className="border-bottom"  expand="lg" collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
+          <Navbar className="border-bottom" collapseOnSelect expand="lg" bg="dark" variant="dark" sticky="top">
             <Navbar.Brand>Umesh</Navbar.Brand>
 
             <Navbar.Toggle className="border-0" aria-controls="navbar-toggle" />

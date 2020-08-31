@@ -19,7 +19,7 @@ class Carousel extends React.Component {
                     title: 'Blog ',
                     subTitle: 'Technical Blogs',
                     imgSrc: blog,
-                    link: 'nexavblog.blogspot.com',
+                    link: 'https://nexavblog.blogspot.com/',
                     selected: false
                 },
                 {
@@ -71,7 +71,7 @@ class Carousel extends React.Component {
     render() {
         return(
             <Container fluid={true}>
-                <Row className="justify-content-around">
+                <Row className="justify-content-around col-12 mx-auto">
                     {this.makeItems(this.state.items)}
                 </Row>
             </Container>

@@ -29,7 +29,7 @@ function Skills(props) {
                     </div>
                     <div className='p-3'>
                         <span><label>NODE JS</label></span>
-                        <ProgressBar striped variant="info" now={65} />
+                        <ProgressBar striped variant="warning" now={65} />
                     </div>
                 </Col>
                 <Col className='right'>
