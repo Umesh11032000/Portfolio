@@ -1,14 +1,9 @@
 import React from 'react';
-
 import Form from 'react-bootstrap/Form';
 import Button from 'react-bootstrap/Button';
-
-import Hero from '../components/Hero';
 import Content from '../components/Content';
-import Axios from 'axios';
 
 class ContactPage extends React.Component {
-
     constructor(props) {
         super(props);
         this.state = {
@@ -41,18 +36,20 @@ class ContactPage extends React.Component {
             disabled: true
         });
 
-     
+
 
     }
 
 
     render() {
-        return(
-            <div>
-                <Hero title={this.props.title} />
+        return (
+            <div className='contact-div'>
+                <h1 className='contact-text' >
+                    Let's Talk
+                </h1>
 
                 <Content>
-                    <Form onSubmit={this.handleSubmit}>
+                    <Form onSubmit={this.handleSubmit} className='contact-form'>
                         <Form.Group>
                             <Form.Label htmlFor="full-name">Full Name</Form.Label>
                             <Form.Control placeholder='Enter Your Awesome Name' id="full-name" name="name" type="text" value={this.state.name} onChange={this.handleChange} />
@@ -67,14 +64,13 @@ class ContactPage extends React.Component {
 
                         <Form.Group>
                             <Form.Label htmlFor="message">Message</Form.Label>
-                            <Form.Control placeholder='Enter Your Secret Message' id="message" name="message" as="textarea"rows="3" value={this.state.message} onChange={this.handleChange} />
+                            <Form.Control placeholder='Enter Your Secret Message' id="message" name="message" as="textarea" rows="5" value={this.state.message} onChange={this.handleChange} />
                         </Form.Group>
 
 
-                        <Button className="d-inline-block" variant="outline-primary"type="submit" disabled={this.state.disabled}>
+                        <Button className="d-inline-block" variant="outline-warning" type="submit" disabled={this.state.disabled}>
                             Send
                         </Button>
-
 
                         {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent</p>}
                         {this.state.emailSent === false && <p className="d-inline err-msg">Email Not Sent</p>}
