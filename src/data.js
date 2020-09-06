@@ -1,6 +1,6 @@
 const data = [
     {
-        text: 'I completed my 10th standard in Tara Vidhya Mandir High School with 79%.',
+        text: 'I completed my 10th standard in Adrash Vidhyalaya, Visnagar with 79%.',
         date: 'April, 2015',
         category: {
 			tag: 'Secondary School',
@@ -9,7 +9,7 @@ const data = [
      
     },
     {
-        text: 'I completed my secondery high school in Sheth Shree P.H. Bachkaniwala High School with 75%.',
+        text: 'I completed my 12th standard in Adrash Vidhyalaya, Visnagar with 75%.',
         date: 'April 2017',
         category: {
 			tag: 'Higher/Senior Secondary ',
