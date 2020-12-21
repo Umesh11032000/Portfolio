@@ -14,7 +14,7 @@ const AboutPage = () =>{
                 subtitle=
                 "
                 I'm constantly learning new things. currently those things include gaining more experience with Laravel,
-                React,and Vue JS. When I'm not learning something new chances are I'm creating some Blogs and YouTube videos.
+                React JS,and Vue JS. When I'm not learning something new chances are I'm creating some Blogs and YouTube videos.
                 "
                 link='/skills'
                 btn='My Skills' 
